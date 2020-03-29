@@ -53,14 +53,18 @@
 /*
                          Main application
  */
+void test1_interrup (void)
+{
+   LED2_SetHigh(); 
+}
 int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
     while (1)
     {
-        LED_Toggle();
-        __delay_ms(500);
+        LED1_Toggle();
+        __delay_ms(1000);
         // Add your application code
     }
     return 1; 

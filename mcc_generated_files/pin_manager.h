@@ -56,6 +56,152 @@
 */
 /**
   @Summary
+    Sets the GPIO pin, RB14, high using LATB14.
+
+  @Description
+    Sets the GPIO pin, RB14, high using LATB14.
+
+  @Preconditions
+    The RB14 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RB14 high (1)
+    LED2_SetHigh();
+    </code>
+
+*/
+#define LED2_SetHigh()          (_LATB14 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RB14, low using LATB14.
+
+  @Description
+    Sets the GPIO pin, RB14, low using LATB14.
+
+  @Preconditions
+    The RB14 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RB14 low (0)
+    LED2_SetLow();
+    </code>
+
+*/
+#define LED2_SetLow()           (_LATB14 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RB14, using LATB14.
+
+  @Description
+    Toggles the GPIO pin, RB14, using LATB14.
+
+  @Preconditions
+    The RB14 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RB14
+    LED2_Toggle();
+    </code>
+
+*/
+#define LED2_Toggle()           (_LATB14 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RB14.
+
+  @Description
+    Reads the value of the GPIO pin, RB14.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RB14
+    postValue = LED2_GetValue();
+    </code>
+
+*/
+#define LED2_GetValue()         _RB14
+/**
+  @Summary
+    Configures the GPIO pin, RB14, as an input.
+
+  @Description
+    Configures the GPIO pin, RB14, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RB14 as an input
+    LED2_SetDigitalInput();
+    </code>
+
+*/
+#define LED2_SetDigitalInput()  (_TRISB14 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RB14, as an output.
+
+  @Description
+    Configures the GPIO pin, RB14, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RB14 as an output
+    LED2_SetDigitalOutput();
+    </code>
+
+*/
+#define LED2_SetDigitalOutput() (_TRISB14 = 0)
+/**
+  @Summary
     Sets the GPIO pin, RB15, high using LATB15.
 
   @Description
@@ -73,11 +219,11 @@
   @Example
     <code>
     // Set RB15 high (1)
-    LED_SetHigh();
+    LED1_SetHigh();
     </code>
 
 */
-#define LED_SetHigh()          (_LATB15 = 1)
+#define LED1_SetHigh()          (_LATB15 = 1)
 /**
   @Summary
     Sets the GPIO pin, RB15, low using LATB15.
@@ -97,11 +243,11 @@
   @Example
     <code>
     // Set RB15 low (0)
-    LED_SetLow();
+    LED1_SetLow();
     </code>
 
 */
-#define LED_SetLow()           (_LATB15 = 0)
+#define LED1_SetLow()           (_LATB15 = 0)
 /**
   @Summary
     Toggles the GPIO pin, RB15, using LATB15.
@@ -121,11 +267,11 @@
   @Example
     <code>
     // Toggle RB15
-    LED_Toggle();
+    LED1_Toggle();
     </code>
 
 */
-#define LED_Toggle()           (_LATB15 ^= 1)
+#define LED1_Toggle()           (_LATB15 ^= 1)
 /**
   @Summary
     Reads the value of the GPIO pin, RB15.
@@ -147,11 +293,11 @@
     uint16_t portValue;
 
     // Read RB15
-    postValue = LED_GetValue();
+    postValue = LED1_GetValue();
     </code>
 
 */
-#define LED_GetValue()         _RB15
+#define LED1_GetValue()         _RB15
 /**
   @Summary
     Configures the GPIO pin, RB15, as an input.
@@ -171,11 +317,11 @@
   @Example
     <code>
     // Sets the RB15 as an input
-    LED_SetDigitalInput();
+    LED1_SetDigitalInput();
     </code>
 
 */
-#define LED_SetDigitalInput()  (_TRISB15 = 1)
+#define LED1_SetDigitalInput()  (_TRISB15 = 1)
 /**
   @Summary
     Configures the GPIO pin, RB15, as an output.
@@ -195,11 +341,11 @@
   @Example
     <code>
     // Sets the RB15 as an output
-    LED_SetDigitalOutput();
+    LED1_SetDigitalOutput();
     </code>
 
 */
-#define LED_SetDigitalOutput() (_TRISB15 = 0)
+#define LED1_SetDigitalOutput() (_TRISB15 = 0)
 
 /**
     Section: Function Prototypes
