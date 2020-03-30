@@ -5,12 +5,12 @@
          <string>class com.microchip.mcc.mcu16.systemManager.DefaultSystemManagerMcu16</string>
       </entry>
       <entry>
-         <string>JTAG</string>
-         <string>class com.microchip.mcc.mcu16.systemManager.jtag.JTAG</string>
-      </entry>
-      <entry>
          <string>Main Manager</string>
          <string>class com.microchip.mcc.mcu16.mainManager.MainManager</string>
+      </entry>
+      <entry>
+         <string>JTAG</string>
+         <string>class com.microchip.mcc.mcu16.systemManager.jtag.JTAG</string>
       </entry>
       <entry>
          <string>INTERNAL OSCILLATOR</string>
@@ -8265,15 +8265,15 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>84eed633417f1f160a9970b8d5c0d33befc1ba7590486b7ce52d751a841a95bb</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\reset.c</file>
-         <hash>f78ef35c99c63e17bd0547a36f7f771aeff7ce7c66a7e1b7351fc7ad9faf76c9</hash>
+         <hash>08690c751aba81e1ef7e56e947994224f7594414d4e6ce69a4e6c38c840f2787</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\uart1.h</file>
          <hash>01f318b67f7c2502a2282307104e156e4e971aea1325312aec0703c7d3751066</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\reset.c</file>
+         <hash>f78ef35c99c63e17bd0547a36f7f771aeff7ce7c66a7e1b7351fc7ad9faf76c9</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\uart1.c</file>
@@ -8305,7 +8305,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\system.c</file>
-         <hash>ff25add2a5b939db854d333a96a1e0b98a7d02988f525eaef044312ae18e7377</hash>
+         <hash>497c3107817dec76bd37785d75f6f42c021b83f63cd040582b53eab6d0887813</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\traps.c</file>

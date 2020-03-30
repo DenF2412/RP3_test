@@ -55,17 +55,24 @@
  */
 void test1_interrup (void)
 {
-   LED2_SetHigh(); 
+   LED2_Toggle(); 
+}
+void test2_interrup (void)
+{
+   UART1_Write(U1RXREG); 
 }
 int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
+    UART1_SetRxInterruptHandler(&test2_interrup);
+    UART1_SetTxInterruptHandler(&test1_interrup);
+    
     while (1)
     {
-        LED1_Toggle();
-        __delay_ms(1000);
-        // Add your application code
+        __delay_ms(500);
+        
+        
     }
     return 1; 
 }
