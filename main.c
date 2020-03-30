@@ -67,11 +67,12 @@ int main(void)
     SYSTEM_Initialize();
     UART1_SetRxInterruptHandler(&test2_interrup);
     UART1_SetTxInterruptHandler(&test1_interrup);
-    
+    TMR1_SetInterruptHandler(&test1_interrup);
+    TMR1_Start();
     while (1)
     {
         __delay_ms(500);
-        
+        UART1_Write(TMR1_SoftwareCounterGet());
         
     }
     return 1; 
